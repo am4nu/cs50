@@ -1,0 +1,64 @@
+/**
+ * Implements a dictionary's functionality.
+ */
+
+#include <stdbool.h>
+#include "dictionary.h"
+typedef struct node {
+
+char word[LENGTH+1];
+struct node* next;
+}node;
+char buffer[LENGTH+1];
+node* head,first,temp=NULL;
+/**
+ * Returns true if word is in dictionary else false.
+ */
+bool check(const char *word)
+{
+    // TODO
+    return false;
+}
+
+/**
+ * Loads dictionary into memory. Returns true if successful else false.
+ */
+bool load(const char *dictionary)
+{
+ FILE *filePtr=fopen(dictionary,"r");
+ while (temp!=E0F)
+    {
+	temp=fgetc(filePtr);
+	if (temp==EOF) break;
+	else if(temp=='\n') {
+		buffer[i]='\0';
+		node* temp=malloc(sizeof(node));
+		strcpy(temp->word,buffer);
+		head->next
+	i=0;
+	}
+	else{ buffer[i]=temp; i++};
+
+    }
+    fclose(filePtr);
+    return true;
+
+}
+
+/**
+ * Returns number of words in dictionary if loaded else 0 if not yet loaded.
+ */
+unsigned int size(void)
+{
+    // TODO
+    return 0;
+}
+
+/**
+ * Unloads dictionary from memory. Returns true if successful else false.
+ */
+bool unload(void)
+{
+    // TODO
+    return false;
+}

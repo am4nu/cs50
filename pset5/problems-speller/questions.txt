@@ -1,0 +1,23 @@
+0.  Longest word in the given large dictionary, its a medical condition related to lungs.
+
+1.  This function has a prototype like this, "int getrusage(int , *struct rusage)", 
+    take two parameters if the value of the first argument is RUSAGE_SELF then the 2nd one is pointer to the struct,
+    that has all the details of cpu time, memory and other resources
+2.  16 types in data in the struct.
+
+3.  getrusage function expects pass by reference. and by the way passing by reference is faster we don't have copy from one variable 
+    and then write to other variable, in this example we have to copy 16 variables it would be too costly.
+    
+4.  checks if number of argument is 2 or 3 then opens the 1st argument checks if it opens, reads it character by character, 
+    checks for the words allows only alphabets  and apostophes, appends character at the end of a word buffer increments the index to append
+    each character.
+    Ignores if Length is larger than the largest word and resets the index to 0 to prepare for a new word.
+    Ignores if there is numbers consumes the remaining alphanumeric strings and prepares for new word by reseting the index to 0.
+    If the index is greater than zero and its not alphabet or apostohpe or digit then we must have found a new word,
+    we terminate it with a null character and update the number of words counter then we check the word by passing to the check function that I wrote.
+    then we print it if it is misspelled.
+
+5. Fgetc() works on character by character, we cannot use fscanf because it reads till white space, it can read double inverted commas, 
+    commas and exclamation mark that can wreak havoc
+    with our check function.
+6. So that we don't alter the variables passed accidently while we tweeking with the code.

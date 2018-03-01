@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. 3x3 to 9X9 inclusive
+1. two dimensional arrays are the data structures used
+2. void greet(void) is called which in turn calls clear & then printf 
+3. init(), draw(), bool move(int ) and bool won() are the funcitons that have to be implemented apparently

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote Result
+{% endblock %}
+
+{% block main %}
+<p>A stock of {{dat["name"]}}({{dat["symbol"]}}) costs {{dat["price"]}} </p>
+
+{% endblock %}
